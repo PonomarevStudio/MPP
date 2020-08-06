@@ -1,0 +1,176 @@
+:root {
+    --root-padding: 30px;
+    --calculated-root-horizontal-padding: calc(((100vw - 1024px) / 2) + var(--root-padding));
+    --root-margin: 50px;
+    font-size: 25px;
+}
+
+header {
+    padding: var(--root-padding) var(--calculated-root-horizontal-padding);
+    padding-top: 30px;
+}
+
+.logo {
+    --size: 100px;
+    margin-right: 30px;
+}
+
+header .title,
+footer .title {
+    font-size: 30px;
+}
+
+.call-button {
+    font-size: 40px;
+    line-height: 100px;
+    color: black;
+}
+
+.call-button:before {
+    content: none;
+}
+
+header .toggle-menu {
+    display: none;
+}
+
+aside {
+    all: initial;
+}
+
+aside nav {
+    all: initial;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 var(--calculated-root-horizontal-padding);
+}
+
+aside a {
+    all: initial;
+    font-size: 25px;
+    font-weight: bold;
+    color: #636363;
+}
+
+footer {
+    margin-top: calc(25vw - var(--root-padding));
+    padding: 30px var(--calculated-root-horizontal-padding);
+    padding-top: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+}
+
+footer > div:last-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer:before {
+    position: absolute;
+    z-index: -1;
+    content: '';
+    left: 0;
+    right: 0;
+    top: -20vw;
+    /*width: 100vw;*/
+    height: 25vw;
+    background-image: url("footer-decoration.svg");
+    background-size: calc(100% + 2px);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+footer > div:first-child {
+    margin: unset;
+    align-items: center;
+    min-width: calc(50vw - var(--calculated-root-horizontal-padding) - 30px);
+}
+
+footer > div:last-child {
+    width: 100%;
+    /*margin-left: 30px;*/
+}
+
+footer > div:last-child > div {
+    max-width: calc((50vw - var(--calculated-root-horizontal-padding) + 120px) / 3);
+    margin-bottom: unset;
+}
+
+footer > div:last-child > div > span:not(:first-child) {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+main {
+    padding: var(--root-padding) var(--calculated-root-horizontal-padding);
+}
+
+main h1 {
+    font-size: 40px;
+}
+
+main img {
+    all: initial;
+    width: 100%;
+}
+
+.offers-slider {
+    all: initial;
+    width: 100%;
+    margin-bottom: var(--root-margin);
+}
+
+.offers-slider .slide .content {
+    left: var(--root-margin);
+    bottom: var(--root-margin);
+}
+
+.offers-slider .slide .content span {
+    font-size: 50px;
+}
+
+.articles-preview {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.articles-preview .article {
+    width: calc((100% - var(--root-margin)) / 2);
+}
+
+.articles-preview .article:nth-child(1),
+.articles-preview .article:nth-child(2) {
+    margin-bottom: unset;
+}
+
+.article {
+    font-size: 20px;
+}
+
+.article-cover {
+    all: initial;
+    position: relative;
+    width: 100%;
+}
+
+.article-cover span {
+    /*width: 100%;*/
+    text-align: center;
+    font-size: 30px;
+    width: calc(100% - (var(--root-padding) * 2));
+}
+
+.button {
+    font-size: 24px;
+}
+
+.about {
+    display: initial;
+}
+
+.about span {
+    font-size: 40px;
+}
