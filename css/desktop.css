@@ -76,7 +76,7 @@ footer:before {
     top: -20vw;
     /*width: 100vw;*/
     height: 25vw;
-    background-image: url("footer-decoration.svg");
+    background-image: url("/img/footer-decoration.svg");
     background-size: calc(100% + 2px);
     background-position: center;
     background-repeat: no-repeat;
