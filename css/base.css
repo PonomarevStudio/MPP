@@ -57,14 +57,14 @@ header > div {
     width: var(--size);
     height: var(--size);
     margin-right: 10px;
-    background-image: url("logo.svg");
+    background-image: url("/img/logo.svg");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 #menu-state:checked ~ header .logo {
-    background-image: url("logo.inverted.svg");
+    background-image: url("/img/logo.inverted.svg");
 }
 
 header .title,
@@ -126,7 +126,7 @@ footer {
 }
 
 footer .logo {
-    background-image: url("logo.inverted.svg");
+    background-image: url("/img/logo.inverted.svg");
 }
 
 footer > div:last-child > div {
