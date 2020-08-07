@@ -7,20 +7,26 @@ layout: default
 	e.g index.md and about.md
 {% endcomment %}
 
+<section class="offers-slider">
+	<div class="slide">
+		<div class="content">
+			<span>Оффер</span>
+			<p>И даже с небольшим описанием</p>
+		</div>
+		<img src="https://picsum.photos/1024/500?0">
+	</div>
+</section>
+
+{% include services.html %}
+
 {% assign stripped_content = content | strip_newlines %}
 {% if content and stripped_content != "" %}
 <section class="about">
-	<div class="container pure-g">
-		<div class="pure-u-1">
-			<div class="content content-narrow">
-				{{ content }}
-			</div>
-		</div>
-	</div>
+	<span>О компании</span>
+	{{ content }}
+	<a href="inner.html" class="button">Читать продолжение</a>
 </section>
 {% endif %}
-
-{% include services.html %}
 
 {% include news.html %}
 
