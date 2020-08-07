@@ -2,7 +2,7 @@
 	Creates a breadcrumb from the page's URL
 {% endcomment %}
 
-<nav class="breadcrumbs">
+<nav class="breadcrumbs" style="display: none">
 	<div class="container">
 		<div class="pure-u-1">
         <div class="content {% if include.class %}{{ include.class }}{% endif %}">
@@ -25,4 +25,10 @@
         </div>
     </div>
 	</div>
+</nav>
+
+<nav class="breadcrumbs">
+	<a href="index.html">Главная</a>
+	<a href="inner.html">Раздел сайта</a>
+	<a href="inner.html">Страница сайта</a>
 </nav>
