@@ -1,6 +1,6 @@
 ---
 title: Главная
-banner_image: "/uploads/2020/09/04/photo_2020-09-04-22-55-17.jpeg"
+banner_image: ''
 layout: landing-page
 heading: Belkirk College
 partners: []
@@ -19,7 +19,6 @@ menu:
   navigation:
     identifier: _index
     weight: 1
-published: false
 
 ---
 Еще один небольшой текст, только в этот раз о компании — и возможно его прочитают даже больше людей чем предыдущие
